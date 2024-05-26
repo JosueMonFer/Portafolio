@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="fotoPerfil"><img src="assets/img/IMG_20221024_165846.jpg" alt="foto de perfil">
+                        <p class="nombre">JOSUE MONDRAGON</p>
+                    </div>
+                </li>
+                <li>
+                    <p class="nombre"><a href="#quien-soy">¿Quién soy?</a></p>
+                </li>
+                <li>
+                    <p class="nombre"><a href="#proyectos">Proyectos</a></p>
+                </li>
+                <li>
+                    <p class="nombre"><a href="#contacto">Contacto</a></p>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="espacio"></div>
+    <section class="seccion">
+        <div id="fotoJosue">
+            <img src="assets/img/IMG_20221024_165846.jpg" alt="foto josue">
+        </div>
+        <div class="presentacion">
+            <p>¡Hola! Soy Josué, estudiante de ingeniería en software en la Universidad Autónoma de Querétaro. En este
+                portafolio, encontrarás una selección de mis trabajos que he realizado a lo largo de mi carrera, tambien
+                conoceras un poco más de mi y de mis habilidades.</p>
+        </div>
+    </section>
+
+    <section id="quien-soy">
+        <div class="seccion">
+            <h1>¿Quién soy?</h1>
+            <div class="descripcion">
+                <p>Soy estudiante de ingeniería en software en la Universidad Autónoma de Querétaro, y mi día a día está
+                    lleno de desafíos y aprendizajes apasionantes. Desde pequeño, siempre he tenido una gran curiosidad
+                    por
+                    la tecnología y cómo funcionan las cosas detrás de las pantallas. Esta curiosidad me llevó a elegir
+                    esta
+                    carrera, que combina perfectamente mi amor por las computadoras y mi deseo de resolver problemas
+                    complejos.</p>
+                <h2>Gustos</h2>
+                <div class="gustos">
+                    <div>
+                        <img src="assets/img/f1.jpg" alt="coche f1 antiguo">
+                        <p>Me gustan los deportes de motor, especialmente la f1 y la indycar.</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/videojuegos.jpg" alt="coche f1 antiguo">
+                        <p>Desde pequeño he sido fan de los videojuegos. Mis juegos favoritos son minecraft y cuphead.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="assets/img/musica.jpg" alt="coche f1 antiguo">
+                        <p>Escucho todo tipo de música. Mis artistas favoritos son Michael Jackson y Pink Floyd.</p>
+                    </div>
+                </div>
+                <div class="habilidades">
+                    <div class="habilidadesBlandas">
+                        <h2>Habilidades Blandas</h2>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Flexibilidad</li>
+                            <li>Autocontrol</li>
+                            <li>Pensamiento crítico</li>
+                            <li>Análisis de problemas</li>
+                            <li>Organización</li>
+                            <li>Perseverancia</li>
+                        </ul>
+                    </div>
+                    <div class="habilidadesDuras">
+                        <h2>Habilidades Duras</h2>
+                        <ul>
+                            <li>HTML/CSS</li>
+                            <li>Creación de prototipos y maquetados</li>
+                            <li>Uso de Figma</li>
+                            <li>Contabilidad</li>
+                            <li>Idioma Ingles</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <div class="seccion">
+            <h1>Proyectos</h1>
+            <div class="descripcion">
+                <div class="contenedor">
+                    <div class="caja" onclick="window.location.href='https://github.com/ModeStudy/proyectoHack.git'">
+                        <h2>DragonRide</h2>
+                        <img src="assets/img/hackaton.jpg" alt="proyecto hackaton">
+                        <p>Proyecto Hackaton Troyano 2024</p>
+                    </div>
+                    <div class="caja" onclick="window.location.href='https://www.figma.com/design/mqns6yYpP0TIZbYPmDm8ZJ/Uaquibus-App?node-id=0-1&t=DG15z5k69GTsiLiV-1'">
+                        <h2>Uaquibus App</h2>
+                        <img src="assets/img/uaquibus.png" alt="">
+                        <p>Proyecto Figma Diseño de Interfaces</p>
+                    </div>
+                    <div class="caja" onclick="window.location.href='https://www.figma.com/design/TVlTSLJVcVXjkJfrnYRXEA/Maquetado-Propuesta-UAQ?t=DN8ncYmaUuldYLWr-1'">
+                        <h2>Propuesta Portal UAQ</h2>
+                        <img src="assets/img/portalUAQ.png" alt="">
+                        <p>Proyecto Figma Portal UAQ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="seccion">
+            <h1>Contacto</h1>
+            <div class="descripcion">
+                <div class="formulario">
+                    <h2>Escribe un mensaje</h2>
+                    <form action="https://example.com/form-handler" method="POST">
+                        <input type="text" name="name" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Correo Electrónico" required>
+                        <textarea name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+                <h2>Mis Redes Sociales</h2>
+                <div class="redes">
+                <a href="https://www.facebook.com" target="_blank" class="facebook">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank" class="twitter">Twitter</a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>2024 Josué Mondragón.</p>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

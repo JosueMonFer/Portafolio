@@ -1,0 +1,301 @@
+body {
+    background-color: #6b8ffe;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+
+header nav ul {
+    background-color: #F6F3EC;
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #121F40;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav ul li:first-child {
+    padding: 20px;
+}
+
+.fotoPerfil {
+    display: flex;
+    align-items: center;
+}
+
+.fotoPerfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    border: 2px solid #121F40;
+}
+
+.nombre {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #121F40;
+    letter-spacing: 2px;
+}
+
+nav ul li:nth-child(2) {
+    margin-left: auto;
+    padding: 20px;
+}
+
+nav ul li:nth-child(3) {
+    padding: 20px;
+}
+
+nav ul li:nth-child(4) {
+    padding: 0 50px 0 20px;
+}
+
+.espacio {
+    padding-top: 130px;
+}
+
+.seccion {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.seccion h1 {
+    font-family:fantasy;
+    font-size: 4em;
+    padding: 30px 0 20px 0;
+}
+
+#fotoJosue {
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+#fotoJosue img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #F6F3EC;
+}
+
+.presentacion {
+    font-size: 1.4em;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 500px;
+    padding-top: 10px;
+}
+
+.descripcion {
+    border: 1px solid #F6F3EC;
+    border-radius: 10px;
+    margin: 0 20px 0 20px;
+    display: flex;
+    flex-direction: column; /* Cambiado de row a column */
+    align-items: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.descripcion p {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 30px;
+}
+
+.gustos {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.gustos div {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.gustos div img {
+    width: 350px;
+    border-radius: 15px;
+}
+
+.descripcion h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gustos div p {
+    padding-top: 10px;
+    text-align: center;
+    line-height: 18px;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.habilidadesBlandas, .habilidadesDuras {
+    width: 48%;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #F6F3EC;
+    border-radius: 10px;
+    background-color: #F6F3EC;
+    box-sizing: border-box;
+}
+
+.habilidadesBlandas h2, .habilidadesDuras h2 {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.habilidadesBlandas ul li, .habilidadesDuras ul li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.caja {
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.caja h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caja p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.caja img {
+    width: 350px;
+    justify-content: center;
+}
+
+.caja:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contacto {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.formulario {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.formulario h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.formulario input, .formulario textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #0056b3;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes a {
+    color: #0056b3;
+    font-size: 40px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+.redes a:hover {
+    transform: scale(1.2);
+    color: #ddd;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
